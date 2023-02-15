@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="363dp"
+        android:layout_height="363dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="1dp"
+            android:onClick="increasePoint"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/chamber" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/fade" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/jett" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/killjoy" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/neon" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/sage" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/sova" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/viper" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="increasePoint"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/yoru" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/remainingTime"
+        android:layout_width="238dp"
+        android:layout_height="45dp"
+        android:text="Remaining Time: 0 sec"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="201dp"
+        android:layout_height="38dp"
+        android:text="Your Score: 0 point"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
